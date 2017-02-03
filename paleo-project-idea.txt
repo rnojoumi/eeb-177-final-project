@@ -1,0 +1,14 @@
+
+1.group name: Canis
+tail n+1|cut -d "," -f 6 canis.csv|sort|uniq |wc -l
+100 unique species 
+
+
+2. group name: Equus
+tail n+1|cut -d "," -f 6 equus.csv|sort|uniq |wc -l
+183
+
+
+3. group name : Cetacea
+tail n+1|cut -d "," -f 6 cetacea.csv|sort|uniq |wc -l
+1666
