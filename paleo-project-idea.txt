@@ -12,3 +12,8 @@ tail n+1|cut -d "," -f 6 equus.csv|sort|uniq |wc -l
 3. group name : Cetacea
 tail n+1|cut -d "," -f 6 cetacea.csv|sort|uniq |wc -l
 1666
+
+
+from these data, I can find the diversity of different unique species and plot diversity through time.  
+Also I can focus on one specie and plot the occurrence of it, which will help find the extinction time and rates. 
+From these results, I can compare the data for species from the same genus or family and find any possible similarity or difference. 
