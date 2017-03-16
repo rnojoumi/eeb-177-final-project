@@ -1,0 +1,20 @@
+---
+title: "collection"
+author: "Roxana Nojoumi"
+date: "March 12, 2017"
+output: md_document
+---
+
+```{r}
+airports <- read.csv("./eq_new_col.csv", header = TRUE)
+#install.packages("rworldmap")
+head(airports)
+  
+library(rworldmap)
+newmap <- getMap(resolution = "low")
+plot(newmap, xlim = c(-180,150 ), ylim = c(-40, 55), asp = 1)
+points(airports$lng, airports$lat, col = "green", cex = .4)
+title("Equidae Fossil Occurrence")
+
+
+```
